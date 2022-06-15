@@ -1,0 +1,134 @@
+/* /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+    box-sizing: border-box;
+    font-family: lexend deca,sans-serif;
+}
+body{
+    background-color:#f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    height: 96%;
+}
+.columncard{
+    width: 800px;
+    height: 430px;
+    margin: auto;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    border: 0px solid transparent;
+    border-radius: 50px;
+}
+.car-sedan{
+    width: 33.33%;
+    background-color: #e38826;
+    height: 100%;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.car-suv{
+    width: 33.33%;
+    background-color: #006970;
+    height: 100%;
+}
+.car-luxury{
+    width: 33.33%;
+    height: 100%;
+    background-color: #004241;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+h2{
+    color: #f2f2f2;
+    font-family: Big shoulders display, monospace;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-top: 35px;
+}
+.text{
+    font-size: 15px;
+    color: rgb(242, 242, 242);
+    margin-top: 30px;
+    letter-spacing:1px;
+    line-height: 20px;
+}
+.car-luxury,.car-sedan,.car-suv{
+    padding: 25px 15px 15px 25px;
+}
+button{
+    background-color: #f2f2f2;
+    padding: 9px;
+    font-family: lexend deca,sans-serif;
+    border-radius: 40px;
+    margin-top: 70px;
+    border: 1px solid #f3f3f3;
+}
+.btn{
+    color: #e38826;
+}
+.bnt{
+    color: #006970;
+}
+.tnb{
+    color:#004241 ;
+}
+.btn:hover,.tnb:hover,.bnt:hover{
+cursor: pointer;
+background-color: transparent;
+color: #f2f2f2;
+}
+@media (min-width:900px) {
+    .columncard{
+        flex-direction: row;
+    }
+}
